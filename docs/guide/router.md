@@ -78,8 +78,8 @@ The routing configuration will be generated as follows:
 
 ```js
 [
-  { path: '/': component: './pages/index.js' },
-  { path: '/users/:id?': component: './pages/users/$id$.js' },
+  { path: '/', component: './pages/index.js' },
+  { path: '/users/:id?', component: './pages/users/$id$.js' },
 ]
 ```
 
