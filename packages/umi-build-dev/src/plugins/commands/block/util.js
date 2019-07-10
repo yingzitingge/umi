@@ -119,7 +119,7 @@ export async function getDefaultBlockList(_, blockConfig = {}, addBlock) {
     const ignoreFile = ['_scripts'];
     const { name, owner } = GitUrlParse(defaultGitUrl);
     spinner.succeed();
-    spinner.start(`🔍 find block list form ${chalk.yellow(defaultGitUrl)}`);
+    spinner.start(`🔍 find block list from ${chalk.yellow(defaultGitUrl)}`);
 
     // 一个 github 的 api,可以获得文件树
     const { body } = await got(`https://api.github.com/repos/${owner}/${name}/git/trees/master`);
